@@ -19,7 +19,7 @@ const Login = () => {
   const handleLogin = async(e) => {
     e.preventDefault();
     try {
- const res= await axios.post('http://localhost:8000/login',loginState);
+ const res= await axios.post('https://points44-api.vercel.app/login',loginState);
       setLoginState({
         email:"",
         password:""
@@ -40,7 +40,7 @@ const Login = () => {
   const handleRegister = async(e) => {
     e.preventDefault();
     try {
-      const res=await axios.post('http://localhost:8000/register',registerState);
+      const res=await axios.post('https://points44-api.vercel.app/register',registerState);
       setRegisterState({
         name: "",
         email: "",

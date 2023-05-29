@@ -11,7 +11,7 @@ export function UserContextProvider({children}) {
   const [currtournament, setCurrTournament] = useState();
   const location = useLocation();
   const fetchTournament=(user)=>{
-    axios.get("http://localhost:8000/get/tournament", {
+    axios.get("https://points44-api.vercel.app/get/tournament", {
       headers: {
         Authorization: 'Bearer ' + user
       }

@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/delete/tournament/${id}`, {
+      await axios.delete(`https://points44-api.vercel.app/delete/tournament/${id}`, {
         headers: {
           Authorization: 'Bearer ' + user
         }
@@ -35,7 +35,7 @@ const Dashboard = () => {
     }
   }
   const fetchTournament=(user)=>{
-    axios.get("http://localhost:8000/get/tournament", {
+    axios.get("https://points44-api.vercel.app/get/tournament", {
       headers: {
         Authorization: 'Bearer ' + user
       }

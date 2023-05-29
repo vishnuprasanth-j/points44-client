@@ -37,7 +37,7 @@ const Modal = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        await axios.post("http://localhost:8000/add/tournament",values, {
+        await axios.post("https://points44-api.vercel.app//add/tournament",values, {
           headers: {
             Authorization: 'Bearer ' + user
           }}

@@ -16,7 +16,7 @@ const Addteams = () => {
 
   const fetchTeams = async (tournamentId) => {
     try {
-      const response = await axios.get(`http://localhost:8000/get/teams/${tournamentId}`, {
+      const response = await axios.get(`https://points44-api.vercel.app/get/teams/${tournamentId}`, {
         headers: {
           Authorization: 'Bearer ' + user
         }
@@ -40,7 +40,7 @@ const Addteams = () => {
 const handleAddTeam = async () => {
   if (teamName.trim() !== "") {
     try {
-      const response = await axios.post(`http://localhost:8000/add/team/${id}`, {
+      const response = await axios.post(`https://points44-api.vercel.app/add/team/${id}`, {
         team: teamName
       }, {
         headers: {
@@ -59,7 +59,7 @@ const handleAddTeam = async () => {
 const handleDeleteTeam = async (index) => {
   try {
     const teamToDelete = teams[index];
-    const response = await axios.delete(`http://localhost:8000/delete/team/${id}`, {
+    const response = await axios.delete(`https://points44-api.vercel.app/delete/team/${id}`, {
       headers: {
         Authorization: 'Bearer ' + user
       },
