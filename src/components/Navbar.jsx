@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div className='flex flex-col w-full absolute h-46 mt-12 justify-center items-center bg-slate-50 rounded-lg mx-auto left-0'>
                   <Link className="text-lg  text-black w-full text-center" to='/'>Home</Link>
                   <hr className="my-1 border-gray-500 w-full" />
-                  <Link className="text-lg  text-black w-full text-center" to='/Dashboard'>Dashboard</Link>
+                  <Link className="text-lg  text-black w-full text-center" to='/dashboard'>Dashboard</Link>
                   <hr className="my-1 border-gray-500 w-full" />
                   {!user ? 
                   <Link className="text-lg  text-black w-full text-center" to='/Login'>Login</Link>:
