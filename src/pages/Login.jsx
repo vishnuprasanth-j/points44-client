@@ -46,7 +46,7 @@ const Login = () => {
         email: "",
         password: ""
       })
-      navigate('/Dashboard')
+      navigate('/dashboard')
       const st={
         token:res.data.token,
         email:res.data.email

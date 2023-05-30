@@ -22,7 +22,7 @@ const App = () => {
           <Route element={<Login />} path="/Login" />
           {
             localStorage.getItem('token') && <>
-            <Route element={<Dashboard />} path="/Dashboard" />
+            <Route element={<Dashboard />} path="/dashboard" />
               <Route element={<Addteams />} path="/teams/:id" />
               <Route element={<Addresults />} path="/addresult/:id" />
               <Route element={<Result />} path="/result/:id" />
