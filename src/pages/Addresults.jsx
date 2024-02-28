@@ -42,7 +42,7 @@ const Addresults = () => {
 
   const saveResult = async () => {
     try {
-      await axios.post(`https://points44-api.vercel.app/add/result/${id}`, { results: results }, {
+      await axios.post(`https://points-b.onrender.com/add/result/${id}`, { results: results }, {
         headers: {
           Authorization: 'Bearer ' + user
         }
@@ -55,7 +55,7 @@ const Addresults = () => {
   }
   const deleteResult =async (matchId) => {
     try {
-      await axios.delete(`https://points44-api.vercel.app/delete/result/${id}/${matchId}`, {
+      await axios.delete(`https://points-b.onrender.com/delete/result/${id}/${matchId}`, {
         headers: {
           Authorization: 'Bearer ' + user
         }
@@ -79,7 +79,7 @@ const Addresults = () => {
 
   const fetchMatches = async (tournamentId) => {
     try {
-      const response = await axios.get(`https://points44-api.vercel.app/get/teams/${tournamentId}`, {
+      const response = await axios.get(`https://points-b.onrender.com/get/teams/${tournamentId}`, {
         headers: {
           Authorization: 'Bearer ' + user
         }

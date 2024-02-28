@@ -71,7 +71,7 @@ const Result = () => {
 
   const fetchResult = async (tournamentId) => {
     try {
-      const response = await axios.get(`https://points44-api.vercel.app/get/teams/${tournamentId}`, {
+      const response = await axios.get(`https://points-b.onrender.com/get/teams/${tournamentId}`, {
         headers: {
           Authorization: 'Bearer ' + user
         }
